@@ -2,6 +2,8 @@
 
 BottomBar component for SwiftUI inspired by this [concept](https://dribbble.com/shots/5925052-Google-Bottom-Bar-Navigation-Pattern)
 
+![Preview](./preview.gif "Preview")
+
 ### Requirements
 
 * Xcode 11
@@ -10,6 +12,13 @@ BottomBar component for SwiftUI inspired by this [concept](https://dribbble.com/
 ### Installation
 
 In Xcode go to `File -> Swift Packages -> Add Package Dependency` and paste this repo url `https://github.com/smartvipere75/BottomBar-SwiftUI`
+
+### Usage
+
+1. `import BottomBar_SwiftUI`
+2. Create array of `BottomBarItem` (maximum 4)
+3. Create `@State private var selectedIndex` within a View to keep track of `BottomBar` selected index
+4. Create `BottomBar`like `BottomBar(selectedIndex: $selectedIndex, items: items)`
 
 ### Example
 
