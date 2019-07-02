@@ -116,4 +116,4 @@ var body: some View {
 
 ### Extra
 
-Follow me on Twitter @smartvipere75 for latest updates.
+Follow me on [Twitter](https://twitter.com/smartvipere75) for latest updates.
