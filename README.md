@@ -60,7 +60,7 @@ var destination: some View {
 }
 
 var navigateButton: some View {
-    NavigationButton(destination: destination) {
+    NavigationLink(destination: destination) {
         ZStack {
             Rectangle()
                 .fill(item.color)
