@@ -11,7 +11,7 @@ BottomBar component for SwiftUI inspired by this [concept](https://dribbble.com/
 
 ### Installation
 
-In Xcode go to `File -> Swift Packages -> Add Package Dependency` and paste this repo url `https://github.com/smartvipere75/BottomBar-SwiftUI`
+In Xcode go to `File -> Swift Packages -> Add Package Dependency` and paste this repo url `https://github.com/smartvipere75/bottombar-swiftui` then `Next -> Branch: master`  
 
 ### Usage
 
