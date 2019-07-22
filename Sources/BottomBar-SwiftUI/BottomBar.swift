@@ -14,7 +14,7 @@ public struct BottomBar : View {
     public let items: [BottomBarItem]
     
     public init(selectedIndex: Binding<Int>, items: [BottomBarItem]) {
-        self.$selectedIndex = selectedIndex
+        self._selectedIndex = selectedIndex
         self.items = items
     }
     
@@ -35,7 +35,9 @@ public struct BottomBar : View {
                     Spacer()
                 }
             }
-        }.padding()
+        }
+        .padding()
+        .animation(.default)
     }
 }
 

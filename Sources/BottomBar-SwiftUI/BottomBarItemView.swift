@@ -20,7 +20,7 @@ public struct BottomBarItemView: View {
             
             if isSelected {
                 Text(item.title)
-                    .color(item.color)
+                    .foregroundColor(item.color)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             }
         }
