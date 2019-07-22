@@ -49,7 +49,7 @@ var followButton: some View {
 
             Text("@smartvipere75")
                 .font(.subheadline)
-                .color(.gray)
+                .foregroundColor(.gray)
         }
     }
 }
@@ -70,7 +70,7 @@ var navigateButton: some View {
 
             Text("Navigate")
                 .font(.headline)
-                .color(.white)
+                .foregroundColor(.white)
         }
     }
 }
