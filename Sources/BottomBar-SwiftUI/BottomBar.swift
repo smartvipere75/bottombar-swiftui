@@ -35,7 +35,9 @@ public struct BottomBar : View {
         Button(action: {
             withAnimation { self.selectedIndex = index }
         }) {
-            BottomBarItemView(isSelected: index == selectedIndex, item: items[index])
+            BottomBarItemView(selected: self.$selectedIndex,
+                              index: index,
+                              item: items[index])
         }
     }
     
