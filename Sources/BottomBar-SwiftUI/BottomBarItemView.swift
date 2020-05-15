@@ -22,6 +22,7 @@ public struct BottomBarItemView: View {
             if isSelected {
                 Text(item.title)
                     .foregroundColor(item.color)
+                    .font(.footnote)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             }
         }
