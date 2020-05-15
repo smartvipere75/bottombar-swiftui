@@ -18,11 +18,26 @@ public struct BottomBar : View {
         self.items = items
     }
     
+    
+    public init(selectedIndex: Binding<Int>, @BarBuilder items: () -> [BottomBarItem]){
+        self = BottomBar(selectedIndex: selectedIndex,
+                         items: items())
+    }
+    
+    
+    public init(selectedIndex: Binding<Int>, item: BottomBarItem){
+        self = BottomBar(selectedIndex: selectedIndex,
+                         items: [item])
+    }
+    
+    
     func itemView(at index: Int) -> some View {
         Button(action: {
             withAnimation { self.selectedIndex = index }
         }) {
-            BottomBarItemView(isSelected: index == selectedIndex, item: items[index])
+            BottomBarItemView(selected: self.$selectedIndex,
+                              index: index,
+                              item: items[index])
         }
     }
     

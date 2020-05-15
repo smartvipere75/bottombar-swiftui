@@ -9,12 +9,13 @@
 import SwiftUI
 
 public struct BottomBarItemView: View {
-    public let isSelected: Bool
+    @Binding var selected : Int
+    public let index: Int
     public let item: BottomBarItem
     
     public var body: some View {
         HStack {
-            Image(systemName: item.icon)
+            item.icon
                 .imageScale(.large)
                 .foregroundColor(isSelected ? item.color : .primary)
             
@@ -30,4 +31,9 @@ public struct BottomBarItemView: View {
                 .fill(isSelected ? item.color.opacity(0.2) : Color.clear)
         )
     }
+    
+    var isSelected : Bool{
+        selected == index
+    }
+    
 }
