@@ -45,7 +45,7 @@ var followButton: some View {
         VStack {
             Text("Developed by Bezhan Odinaev")
                 .font(.headline)
-                .color(item.color)
+                .foregroundColor(item.color)
 
             Text("@smartvipere75")
                 .font(.subheadline)
