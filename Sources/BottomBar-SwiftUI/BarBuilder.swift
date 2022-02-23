@@ -8,7 +8,7 @@
 import Foundation
 
 
-@_functionBuilder
+@resultBuilder
 public struct BarBuilder{}
 
 
