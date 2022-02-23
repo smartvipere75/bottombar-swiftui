@@ -52,7 +52,7 @@ public struct BottomBar : View {
             }
         }
         .padding()
-        .animation(.default)
+        .animation(.default, value: selectedIndex)
     }
 }
 
