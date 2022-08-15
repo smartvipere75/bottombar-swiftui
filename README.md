@@ -116,4 +116,5 @@ var body: some View {
 
 ### Extra
 
+Check out my app [Spendy](https://apps.apple.com/us/app/spendy-spendings-reimagined/id1524435907)
 Follow me on [Twitter](https://twitter.com/smartvipere75) for latest updates.
